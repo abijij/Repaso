@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bbea0c0-cee2-4916-8814-a5d3ca263d96" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7bbea0c0-cee2-4916-8814-a5d3ca263d96" name="Changes" comment="Repaso 04/01/2024">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt_1/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt_1/Automovil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo.java" afterDir="false" />
     </list>
@@ -42,6 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -56,6 +55,14 @@
       <option name="presentableId" value="Default" />
       <updated>1704401607258</updated>
     </task>
+    <task id="LOCAL-00001" summary="Repaso 04/01/2024">
+      <created>1704412776905</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704412776905</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -68,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Repaso 04/01/2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repaso 04/01/2024" />
   </component>
 </project>

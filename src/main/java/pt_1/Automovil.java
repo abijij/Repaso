@@ -8,6 +8,28 @@ public class Automovil {
     private double cilindrada;
     private int capacidadTanque = 40 ;
 
+    public Automovil() {
+    }
+    public Automovil(String fabricante, String modelo) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+    }
+
+    public Automovil(String fabricante, String modelo, String color) {
+        this(fabricante, modelo);
+        this.color = color;
+    }
+
+    public Automovil(String fabricante, String modelo, String color, double cilindrada) {
+        this(fabricante, modelo,color);
+        this.cilindrada = cilindrada;
+    }
+
+    public Automovil(String fabricante, String modelo, String color, double cilindrada, int capacidadTanque) {
+        this(fabricante,modelo,color,cilindrada);
+        this.capacidadTanque = capacidadTanque;
+    }
+
     public String getFabricante() {
         return fabricante;
     }
