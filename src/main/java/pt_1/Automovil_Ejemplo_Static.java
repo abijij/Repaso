@@ -8,18 +8,27 @@ public class Automovil_Ejemplo_Static {
 
         Automovil.setCapacidadTanqueStatic(45);
         Automovil subaru = new Automovil("Subaru","Impreza");
-        subaru.setCilindrada(2.0);
+        subaru.setMotor(new Motor(2.0, TipoMotor.PREMIUM));
+        subaru.setTanque(new Tanque());
         subaru.setColor(Color.BLANCO);
+        subaru.setTipo(TipoAutomovil.HATCHBACK);
 
 
 
         Automovil mazda = new Automovil("Mazda", "BT-50", Color.ROJO);
-        mazda.setCilindrada(3.0);
+        mazda.setMotor(new Motor(3.0, TipoMotor.MAGNA));
+        mazda.setTanque(new Tanque(99));
+        mazda.setTipo(TipoAutomovil.PICKUP);
 
 
-        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS, 3.5, 50);
+        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS,
+                new Motor(2.8, TipoMotor.PREMIUM),
+                new Tanque(45));
+        nissan.setTipo(TipoAutomovil.PICKUP);
 
-        Automovil nissan2 = new Automovil("Nissan", "Navara", Color.AZUL, 3.5, 50);
+        Automovil nissan2 = new Automovil("Nissan", "Navara", Color.AZUL,
+                new Motor(2.2, TipoMotor.DIESEL),
+                new Tanque(77));
 
         Automovil auto = new Automovil();
 
@@ -38,7 +47,13 @@ public class Automovil_Ejemplo_Static {
         System.out.println("Velocidad Maxima carretera: " + Automovil.VELOCIDAD_MAXIMA_CARRETERA);
         System.out.println("Velocidad Maxima ciudad: " + Automovil.VELOCIDAD_MAXIMA_CIUDAD);
 
+        TipoAutomovil tipoSubaru = subaru.getTipo();
+        TipoAutomovil desSubaru = subaru.getTipo();
+        System.out.println("Tipo subaru: " + tipoSubaru.getNombre());
+        System.out.println("Descripcion subaru: " + desSubaru.getDescripcion());
 
+        System.out.println(mazda.calcularCpnsumo(300, 70));
 
     }
+
 }
