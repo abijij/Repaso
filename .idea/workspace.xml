@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bbea0c0-cee2-4916-8814-a5d3ca263d96" name="Changes" comment="Repaso-c 05/01/2024">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo_Enum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/Puerta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/Rueda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/Tanque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/TipoAutomovil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/TipoMotor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/TipoPuerta.java" afterDir="false" />
+    <list default="true" id="7bbea0c0-cee2-4916-8814-a5d3ca263d96" name="Changes" comment="Repaso-c 11/01/2024">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/AutomovilArreglo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo_Relacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pt_1/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt_1/Automovil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo_Static.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt_1/Automovil_Ejemplo_Static.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt_1/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt_1/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt_1/TipoAutomovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt_1/TipoAutomovil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +56,26 @@
       <recent name="pt_1" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="AutomovilArreglo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pt_1.AutomovilArreglo" />
+      <module name="Repaso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pt_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AutomovilArreglo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704687072578</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Repaso-c 11/01/2024">
+      <created>1705028040492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705028040492</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +132,22 @@
     <MESSAGE value="Repaso-b 04/01/2024" />
     <MESSAGE value="Repaso-b 05/01/2024" />
     <MESSAGE value="Repaso-c 05/01/2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repaso-c 05/01/2024" />
+    <MESSAGE value="Repaso-c 11/01/2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repaso-c 11/01/2024" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pt_1/AutomovilArreglo.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

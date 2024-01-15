@@ -1,7 +1,7 @@
 
 package pt_1;
 
-public class Automovil {
+public class Automovil implements Comparable<Automovil> {
 
     private int id;
     private String fabricante;
@@ -14,6 +14,7 @@ public class Automovil {
 
     private Rueda[] ruedas;
     private Puerta[] puertas;
+    private int indicePuerta ;
     private static  int capacidadTanqueStatic = 30;
     private static Color colorPatente = Color.NARANJA ;
     private TipoAutomovil tipo;
@@ -31,6 +32,7 @@ public class Automovil {
 
     public Automovil() {
         this.id= ++ultimoId;
+        this.puertas = new Puerta[4];
     }
     public Automovil(String fabricante, String modelo) {
          this();
@@ -162,6 +164,12 @@ public class Automovil {
         this.puertas = puertas;
     }
 
+    public void addPuerta(Puerta puerta){
+        if (indicePuerta < this.puertas.length){
+            this.puertas[indicePuerta++] = puerta;
+        }
+    }
+
     public  String  detalle(){
         String verdetalle = "auto.id: "   + this.id +
                 "\nauto.fabricante: " + this.getFabricante() +
@@ -174,6 +182,21 @@ public class Automovil {
                         if (this.motor !=null){
                             verdetalle += "\nauto.cilindrada: " + this.motor.getCilindrada();
                         }
+
+        verdetalle += "\nConductor: " + this.getConductor() ;
+
+
+        for (Rueda r: this.getRuedas()) {
+           verdetalle += "\nMarca: " +  r.getFabricante() + "\nRadio del Aro: " +
+                    r.getAro() + "\nAncho del Aro: " + r.getAncho();
+        }
+
+
+        for (Puerta p: this.getPuertas()) {
+
+             verdetalle += "\nTotal de Puertas: " + p.getTotal() + "\nSon automaticas" +
+                    p.isAutomatica() + "\nTipo de puerta: " + p.getTipo() ;
+        }
 
         return verdetalle;
     }
@@ -226,15 +249,25 @@ public class Automovil {
                 && this.modelo.equals(a.getModelo()) );
     }
 
+//    @Override
+//    public String toString() {
+//        return "Automovil{" +
+//                "modelo='" + id + '\'' +
+//                "fabricante='" + fabricante + '\'' +
+//                ", modelo='" + modelo + '\'' +
+//                ", color='" + color + '\'' +
+//                ", cilindrada=" + motor.getCilindrada() +
+//                ", capacidadTanque=" + tanque.getCapacidad() +
+//                '}';
+//    }
     @Override
     public String toString() {
-        return "Automovil{" +
-                "modelo='" + id + '\'' +
-                "fabricante='" + fabricante + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", color='" + color + '\'' +
-                ", cilindrada=" + motor.getCilindrada() +
-                ", capacidadTanque=" + tanque.getCapacidad() +
-                '}';
+        return this.id + " : " + fabricante + " : " + modelo  ;
+    }
+
+    @Override
+    public int compareTo(Automovil a) {
+
+        return this.fabricante.compareTo(a.fabricante);
     }
 }

@@ -18,12 +18,12 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", correo='" + correo + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", telefono='" + telefono + '\'' +
+        return
+                "\nnombre: " + nombre + '\n' +
+                "apellido: " + apellido + '\n' +
+                "correo: " + correo + '\n' +
+                "direccion: " + direccion + '\n' +
+                "telefono: " + telefono + '\n' +
                 '}';
     }
 }
